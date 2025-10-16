@@ -7,16 +7,20 @@ The app displays and manages a list of products with data persistence and naviga
 ---
 
 ## 🧩 Key Features
-- Product listing and detail screens using Retrofit 
-- Room Database integration for local persistence
-- Remembers the last screen visited by the user and restores it on app launch for seamless navigation.  
-- Navigation Component for screen transitions  
-- MVVM architecture for clean separation of concerns  
-- Kotlin coroutines and LiveData for async updates  
-- Material Design UI components
-- Handles offline scenarios and database errors gracefully.
-- Remembers the last screen visited by the user and restores it on app launch using `SharedPreferences` or `DataStore`.  
-- Configured Retrofit instance for network API calls to fetch or update product data dynamically.  
+
+- Product listing and detail screens using **Retrofit**  
+- **Room Database** integration for local persistence  
+- Remembers the **last screen visited** by the user and restores it on app launch for seamless navigation  
+- **Navigation Component** for smooth screen transitions  
+- **MVVM architecture** for clean separation of concerns  
+- **Kotlin Coroutines** and **LiveData** for asynchronous data updates  
+- **Material Design** UI components for a modern look  
+- Handles **offline scenarios** and database errors gracefully  
+- Stores last visited screen using **RooomDB (Local Storage)**  
+- Configured **Retrofit instance** for dynamic product fetching and updates  
+- **Add to Cart** and **View Cart** functionality with data stored in Room Database  
+- Displays **total cart price dynamically** and allows **real-time item deletion**  
+- Integrated **“No Internet” screen** to prevent app crashes and improve user experience  
 
 
 ---
@@ -65,7 +69,9 @@ The app displays and manages a list of products with data persistence and naviga
 
 ## 📸 Screens (if applicable)
 - Product List Screen  
-- Product Detail Screen  
+- Product Detail Screen
+- Add to Cart Screen
+- My Favourites Screen 
 
 ---
 
