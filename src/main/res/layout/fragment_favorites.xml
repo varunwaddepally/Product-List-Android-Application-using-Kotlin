@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cart_background_gradient"
+    android:padding="8dp"
+    tools:context=".ui.fragments.FavoritesFragment">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:background="#AAFFFFFF"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/favoritesTitle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="My Favorites ❤️"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F" />
+
+        <TextView
+            android:id="@+id/favoritesCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 items"
+            android:textColor="#555"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- RecyclerView for Favorite Items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        tools:listitem="@layout/item_product" />
+
+</LinearLayout>
